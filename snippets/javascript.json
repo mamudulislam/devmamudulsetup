@@ -1,0 +1,29 @@
+{
+  "Console Log": {
+    "prefix": "clg",
+    "body": ["console.log($1);"],
+    "description": "Log output to console"
+  },
+  "Arrow Function": {
+    "prefix": "afn",
+    "body": ["const ${1:functionName} = ($2) => {", "\t$0", "};"],
+    "description": "Create an arrow function"
+  },
+  "React Functional Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const ${TM_FILENAME_BASE} = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t);",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Create a React functional component"
+  }
+}

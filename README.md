@@ -4,23 +4,26 @@ A professional VS Code extension that provides a customized development environm
 
 ## Features
 
-- **Custom Commands**: Easily accessible commands to streamline your workflow.
-- **Optimized Environment**: Pre-configured settings for a better developer experience.
-- **Modern UI**: Clean and intuitive integration with VS Code.
+- **Developer Friendly Dark Theme**: A custom-built, eye-care optimized dark theme.
+- **Premium Default Settings**: Auto-configures font (JetBrains Mono), smooth scrolling, and sticky scroll.
+- **Custom Sidebar**: Quick access to essential developer shortcuts from the sidebar.
+- **Pro Snippets**: High-productivity snippets for JavaScript, TypeScript, and React.
+- **Extension Pack**: Bundles essential extensions like Prettier, ESLint, and Error Lens.
 
 ## Usage
 
-1. Install the extension.
-2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
-3. Search for "Hello World" to see the extension in action.
-
-## Requirements
-
-No special requirements at this moment.
+1. **Install & Activate**: Once installed, the "Developer Friendly Dark" theme and premium settings will be applied.
+2. **Access Shortcuts**: Look for the **DevMamudul logo (M)** on the VS Code Activity Bar (left side).
+3. **Use Snippets**: Type `clg` for console logs, `afn` for arrow functions, or `rfc` for React components.
+4. **Commands**: Open the Command Palette (`Ctrl+Shift+P`) and search for "Hello World" to get started.
 
 ## Extension Settings
 
-This extension currently does not contribute any configuration settings.
+This extension provides the following default configurations:
+- `editor.fontFamily`: 'JetBrains Mono'
+- `editor.lineHeight`: 1.8 (Better readability)
+- `workbench.colorTheme`: 'Developer Friendly Dark'
+
 
 ## Known Issues
 

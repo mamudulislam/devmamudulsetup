@@ -13,19 +13,148 @@
     "vscode": "^1.109.0"
   },
   "categories": [
+    "Themes",
+    "Snippets",
+    "Extension Packs",
     "Other"
   ],
   "icon": "icons.ico",
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "devmamudulsetup.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "devmamudulsetup.showMenu",
+        "title": "Show DevMamudul Menu"
+      },
+      {
+        "command": "devmamudulsetup.toggleSounds",
+        "title": "Toggle Typing Sounds"
+      }
+    ],
+    "configuration": {
+      "title": "DevMamudul Setup",
+      "properties": {
+        "devmamudulsetup.enableSounds": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable mechanical keyboard sounds while typing."
+        }
+      }
+    },
+    "themes": [
+      {
+        "label": "Developer Friendly Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/developer-friendly-dark.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/javascript.json"
+      }
+    ],
+    "configurationDefaults": {
+      "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Consolas, monospace",
+      "editor.fontSize": 15,
+      "editor.lineHeight": 1.8,
+      "editor.fontLigatures": true,
+      "editor.cursorBlinking": "smooth",
+      "editor.cursorSmoothCaretAnimation": "on",
+      "editor.smoothScrolling": true,
+      "editor.stickyScroll.enabled": true,
+      "editor.formatOnSave": true,
+      "editor.bracketPairColorization.enabled": true,
+      "files.autoSave": "afterDelay",
+      "files.autoSaveDelay": 100,
+      "workbench.colorTheme": "Developer Friendly Dark",
+      "workbench.iconTheme": "material-icon-theme",
+      "powermode.enabled": true,
+      "powermode.shake.enabled": false,
+      "powermode.explosions.enabled": true,
+      "powermode.explosions.type": "particles",
+      "powermode.explosions.duration": 300,
+      "powermode.explosions.frequency": 2,
+      "powermode.explosions.offset": 0.5,
+      "powermode.explosions.size": 5
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "devmamudul-explorer",
+          "title": "DevMamudul",
+          "icon": "icons/logo.svg"
+        }
+      ]
+    },
+    "views": {
+      "devmamudul-explorer": [
+        {
+          "id": "devmamudul-shortcuts",
+          "name": "Quick Shortcuts",
+          "icon": "$(zap)"
+        }
+      ]
+    },
+    "walkthroughs": [
+      {
+        "id": "devmamudul-welcome",
+        "title": "Welcome to DevMamudul Setup",
+        "description": "Get started with your ultra-premium development environment.",
+        "steps": [
+          {
+            "id": "theme-step",
+            "title": "Apply Premium Theme",
+            "description": "Switch to 'Developer Friendly Dark' for the best eye-care and aesthetic experience.\n[Select Theme](command:workbench.action.selectTheme)",
+            "media": {
+              "markdown": "walkthroughs/theme.md"
+            }
+          },
+          {
+            "id": "settings-step",
+            "title": "Optimized Settings",
+            "description": "We've auto-configured your font, smooth scrolling, and auto-save for maximum productivity.",
+            "media": {
+              "markdown": "walkthroughs/settings.md"
+            }
+          },
+          {
+            "id": "shortcuts-step",
+            "title": "Sidebar Shortcuts",
+            "description": "Access your essential developer tools directly from the new DevMamudul activity bar icon.",
+            "media": {
+              "markdown": "walkthroughs/shortcuts.md"
+            }
+          }
+        ]
       }
     ]
   },
+  "extensionPack": [
+    "PKief.material-icon-theme",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "dbaeumer.vscode-eslint"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "npm run check-types && npm run lint && node esbuild.js",
