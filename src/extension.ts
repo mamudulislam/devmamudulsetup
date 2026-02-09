@@ -67,7 +67,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// 4. Typing Sounds Listener
 	let lastPlayTime = 0;
 	context.subscriptions.push(
-		vscode.workspace.onDidChangeTextDocument((e) => {
+		vscode.workspace.onDidChangeTextDocument((_e) => {
 			const config = vscode.workspace.getConfiguration('devmamudulsetup');
 			if (!config.get<boolean>('enableSounds')) { return; }
 
