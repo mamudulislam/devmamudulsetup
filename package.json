@@ -2,12 +2,12 @@
   "name": "devmamudulsetup",
   "displayName": "DevMamudul Setup",
   "description": "A customized development setup for VS Code.",
-  "publisher": "mamudul",
+  "publisher": "Syed Mamudul Islam",
   "version": "0.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mamudul/devmamudulsetup.git"
+    "url": "https://github.com/mamudulislam/devmamudulsetup"
   },
   "engines": {
     "vscode": "^1.109.0"
@@ -15,6 +15,7 @@
   "categories": [
     "Other"
   ],
+  "icon": "icons.ico",
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
@@ -47,7 +48,6 @@
     "eslint": "^9.39.2",
     "prettier": "^3.5.0",
     "esbuild": "^0.27.2",
-
     "npm-run-all": "^4.1.5",
     "typescript": "^5.9.3",
     "@vscode/test-cli": "^0.0.12",
