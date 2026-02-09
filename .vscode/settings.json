@@ -1,0 +1,126 @@
+{
+    // VS Code Ultra-Premium Developer Setup (Eye-Care & UI/UX Optimized)
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "material",
+    
+    // Editor Typography (Eye-Care Optimization)
+    "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Fira Code iScript', Consolas, monospace",
+    "editor.fontSize": 15,
+    "editor.fontWeight": "400",
+    "editor.lineHeight": 1.8, // Increased for less eye strain
+    "editor.letterSpacing": 0.5,
+    "editor.fontLigatures": true,
+    
+    // Smooth Animations & Premium Cursor
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 3,
+    "editor.cursorBlinking": "smooth", // Softer for eyes
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "editor.cursorSurroundingLines": 10,
+    "editor.mouseWheelScrollSensitivity": 1.5,
+    "editor.fastScrollSensitivity": 6,
+
+    // Ultra-Premium Context Features
+    "editor.stickyScroll.enabled": true,
+    "editor.stickyScroll.maxLineCount": 5,
+    "editor.inlayHints.enabled": "on",
+    "editor.inlayHints.fontFamily": "'JetBrains Mono'",
+    "editor.inlayHints.fontSize": 12,
+
+    // Linting & Formatting (Pro-Workflow)
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+    // UI Enhancements & UX Polish
+    "workbench.list.smoothScrolling": true,
+    "workbench.view.alwaysShowEditorActions": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.linkedEditing": true,
+    "editor.tabSize": 2,
+
+    // Minimap Refinement
+    "editor.minimap.enabled": true,
+    "editor.minimap.autohide": "mouseover",
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "mouseover",
+
+    // Terminal aesthetics
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontWeight": "400",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.lineHeight": 1.4,
+
+    // Premium Color Customizations (Dual-Tone eye-care Mode)
+    "workbench.colorCustomizations": {
+        "[Catppuccin Macchiato]": {
+            // Reverting to your favorite background while adding "Eye-Comfort" tones
+            "editor.background": "#1e1e2e", // Your original requested BG
+            "sideBar.background": "#181825", 
+            "activityBar.background": "#11111b",
+            
+            // Adding a secondary "Comfort" tone for headers and tabs
+            "editorGroupHeader.tabsBackground": "#11111b",
+            "tab.activeBackground": "#1e1e2e",
+            "tab.activeForeground": "#cba6f7",
+            "tab.inactiveBackground": "#181825",
+            "tab.border": "#11111b",
+
+            // Reducing Blue Light/Glare (Eye-Care)
+            "editor.foreground": "#cad3f5", // Slightly warmer/softer foreground
+            "editorLineNumber.foreground": "#585b70",
+            "editorLineNumber.activeForeground": "#cba6f7",
+            
+            // Friendly UI/UX Highlights
+            "editor.lineHighlightBackground": "#585b7015",
+            "editor.selectionBackground": "#585b7040",
+            "editor.wordHighlightBackground": "#585b7033",
+            "list.activeSelectionBackground": "#363a4f",
+            "list.hoverBackground": "#363a4f50",
+            
+            // Soft-Vibrant Functional Colors
+            "editorError.foreground": "#f38ba8",
+            "editorError.background": "#f38ba80a",
+            "editorWarning.foreground": "#fab387",
+            "editorWarning.background": "#fab3870a",
+            "editorInfo.foreground": "#89b4fa",
+            "editorBracketHighlight.foreground1": "#f38ba8",
+            "editorBracketHighlight.foreground2": "#fab387",
+            "editorBracketHighlight.foreground3": "#f9e2af",
+            "editorBracketHighlight.foreground4": "#a6e3a1",
+            "editorBracketHighlight.foreground5": "#89b4fa",
+            "editorBracketHighlight.foreground6": "#cba6f7"
+        }
+    },
+
+    // Error Lens Premium (Eyes-Friendly)
+    "errorLens.enabled": true,
+    "errorLens.fontStyleItalic": true,
+    "errorLens.fontSize": "12px", // Slightly smaller to be less distracting
+    "errorLens.borderStyle": "none",
+    "errorLens.messageBackgroundMode": "line",
+
+    // Breadcrumbs & Navigation
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.icons": true,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+
+    // Better Comments
+    "better-comments.tags": [
+        { "tag": "!", "color": "#f38ba8", "bold": true },
+        { "tag": "?", "color": "#89b4fa", "bold": true },
+        { "tag": "//", "color": "#585b70", "strikethrough": true },
+        { "tag": "todo", "color": "#f9e2af", "bold": true }
+    ]
+}
