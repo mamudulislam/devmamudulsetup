@@ -2,7 +2,7 @@
   "name": "devmamudulsetup",
   "displayName": "DevMamudul Setup",
   "description": "A customized development setup for VS Code.",
-  "publisher": "Syed Mamudul Islam",
+  "publisher": "devmamudulsetup",
   "version": "0.0.1",
   "license": "MIT",
   "repository": {
